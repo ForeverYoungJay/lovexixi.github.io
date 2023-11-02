@@ -9,13 +9,24 @@
     <meta name="keywords" content="YJY, JXH">
     <meta name="description" content="YJY LOVES JXH!">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-    <embed src="./assets/1.mp3" hidden="true" autostart="true" loop="true">
+
     
     <link id="pagestyle" href="./assets/css/soft-design-system-pro.min.css?v=1.0.9" rel="stylesheet">
     <link href="./assets/css/calendar.css" rel="stylesheet">
     <link href="./assets/css/modification.css" rel="stylesheet">
 </head>
 <body class="presentation-page">
+
+<audio autoplay="autopaly" loop="loop" id="audios">
+    <source src="./assets/1.mp3" type="audio/mp3" />
+</audio>
+<script>
+// 将以下代码添加到js入口函数内即可
+document.addEventListener('click', function() {
+    document.getElementById('audios').play()
+})
+</script>
+    
 <header class="header-2">
     <div class="page-header min-vh-75 relative">
         <span class="mask bg-gradient-primary"></span>
